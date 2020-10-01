@@ -8,20 +8,32 @@ var motto = 'The iSchool is my school';
 
 // Log out the motto
 
+console.log(motto);
 
 // Define a variable `mottoLength` that stores the length of the motto.
 // Use the `.length` property
 // Log out the length
+
+var mottoLength = motto.length;
+
+console.log(mottoLength);
 
 
 // Use the `indexOf()` String method to see if the word "cool" is in the string.
 // See http://www.w3schools.com/jsref/jsref_obj_string.asp for String methods
 // Log out a boolean whether it is or not
 
+var exists = motto.indexOf("cool");
+
+console.log(Boolean(exists));
 
 // Create a variable `newMotto` by replacing the word "iSchool" in the motto 
 // with the words "Information School". Use the `replace` method on your `motto`.
 // Log out the new motto
+
+var newMotto = motto.replace("iSchool", "Information School");
+
+console.log(newMotto);
 
 
 // Calculate the ratio between the length of the new motto and the length of the 
@@ -29,7 +41,9 @@ var motto = 'The iSchool is my school';
 // (e.g., `"123.45%"`). Your ratio should include the percent symbol ("%")
 // You can use the `.toFixed()` number method. 
 
+var ratio = (newMotto.length / mottoLength).toFixed(2);
 
+console.log(ratio + '%');
 
 /** Arrays **/
 
@@ -37,13 +51,21 @@ var motto = 'The iSchool is my school';
 // (e.g., 1 4 1 5 9 2 6 5 3 5).
 // Log out the array
 
+var numbers = [1,4,1,5,9,2,6,5,3,5];
+console.log(numbers);
 
 // Use bracket notation to change the `4` in the array to a `4.2`.
 // Log out the updated array
 
+numbers[1] = 4.2;
+
+console.log(numbers);
 
 // Add the number 3 to the end of the array.
 // Log out the updated array
+
+numbers.push(3);
+console.log(numbers);
 
 
 // Find the median (middle) value of the numbers in the array.
